@@ -11,10 +11,3 @@ class FreyFaceHelper:
         self.data = np.transpose(self.data.reshape(28,20,-1),[2,0,1])
         print(self.data.shape)
 
-if __name__ == "__main__":
-    import setting
-    import cv2
-    freyface_helper = FreyFaceHelper(setting.freyface_path)
-    for i in range(len(freyface_helper.data)):
-        cv2.imshow(None, freyface_helper.data[i])
-        cv2.waitKey(50000)

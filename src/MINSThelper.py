@@ -42,10 +42,3 @@ class MINSTHelper:
         f.close()
         return images
 
-if __name__ == "__main__":
-    import setting
-    import cv2
-    minst_helper = MINSTHelper(setting.minst_path)
-    cv2.imshow(None, minst_helper.train_images[0])
-    print(minst_helper.train_labels[0])
-    cv2.waitKey(50000)
