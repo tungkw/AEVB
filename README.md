@@ -21,5 +21,13 @@ python ./src/AEVB_train.py
 
 ## configuration
 ```shell
-python ./src/AEVB_train.py -h
+python ./src/AEVB_train.py 
+--data='FreyFace' \
+--data_path='./datasets/FreyFace' \
+--batch_size=100 \
+--latent_dim=10 \
+--hidden_dim=200 \
+--learning_rate=0.01 \
+--epoch=10000 \
+--output_dir='./output'
 ```
