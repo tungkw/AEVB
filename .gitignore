@@ -2,3 +2,4 @@
 /output
 /datasets
 *.pyc
+/train.sh
