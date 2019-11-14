@@ -29,9 +29,9 @@ class GaussianMLP(nn.Module):
         log_sigma_sq = self.fc3(z)
         return mu, log_sigma_sq
 
-class GaussianMLP_forFrayFace(nn.Module):
+class GaussianMLP_FrayFace(nn.Module):
     def __init__(self, input_size, output_size, hidden_size):
-        super(GaussianMLP_forFrayFace, self).__init__()
+        super(GaussianMLP_FrayFace, self).__init__()
         self.gaussian_mlp = GaussianMLP(input_size, output_size, hidden_size)
 
     def forward(self, z):

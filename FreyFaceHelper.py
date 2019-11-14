@@ -14,5 +14,6 @@ if __name__ == "__main__":
     import setting
     import cv2
     freyface_helper = FreyFaceHelper(setting.freyface_path)
-    cv2.imshow(None, freyface_helper.data[0])
-    cv2.waitKey(50000)
+    for i in range(len(freyface_helper.data)):
+        cv2.imshow(None, freyface_helper.data[i])
+        cv2.waitKey(50000)
