@@ -15,6 +15,7 @@ parser.add_argument('--latent_dim', type=int, default=10, help='dimension of lat
 parser.add_argument('--hidden_dim', type=int, default=200, help='dimension of hidden layer of MLP')
 parser.add_argument('--learning_rate', type=float, default=0.01, help='learing rate')
 parser.add_argument('--epoch', type=int, default=10000, help='iteration over the whole dataset')
+parser.add_argument('--output_dir', type=str, default='./output', help='plot of variational lower bound')
 args = parser.parse_args()
 
 if __name__ == "__main__":
@@ -64,6 +65,8 @@ if __name__ == "__main__":
                 record.append(lower_bound)
 
     plt.plot(record)
-    plt.savefig(os.path.join("./output/", args.data+"_result.png"))
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+    plt.savefig(os.path.join(args.output_dir, args.data+"_result.png"))
     # plt.show()
 
