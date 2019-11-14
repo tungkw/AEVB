@@ -15,7 +15,7 @@ or specify the arguments
 
 ## quick start
 ```shell
-python ./src/VAE_train.py 
+python ./src/VAE_train.py \
 --data='FreyFace' \
 --data_path='./datasets/FreyFace' \
 --batch_size=100 \
