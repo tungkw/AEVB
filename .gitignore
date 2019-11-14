@@ -1,6 +1,4 @@
-./vscode*
-./output
-./datasets
-./src/__pycache__
-./train.sh
+/.vscode*
+/output
+/datasets
 *.pyc
