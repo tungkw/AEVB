@@ -9,17 +9,17 @@ FreyFace https://cs.nyu.edu/~roweis/data.html
 
 save to 'AEVB/datasets'
 
-or edit ./train.sh 
+or specify the arguments
 
 
 
 ## quick start
 ```shell
 cd AEVB
-bash ./train.sh
+python ./src/AEVB_train.py
 ```
 
-## setting
+## configuration
 ```shell
 python ./src/AEVB_train.py -h
 ```
