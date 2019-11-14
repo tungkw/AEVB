@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import torch
 import dataset
 from torch.utils.data import DataLoader
-from AEVB_model import *
+from VAE_model import *
 
 import os
 import argparse

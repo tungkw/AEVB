@@ -7,7 +7,7 @@ MINST http://yann.lecun.com/exdb/mnist/
 
 FreyFace https://cs.nyu.edu/~roweis/data.html
 
-save to 'AEVB/datasets'
+save to './datasets/'
 
 or specify the arguments
 
@@ -15,13 +15,7 @@ or specify the arguments
 
 ## quick start
 ```shell
-cd AEVB
-python ./src/AEVB_train.py
-```
-
-## configuration
-```shell
-python ./src/AEVB_train.py 
+python ./src/VAE_train.py 
 --data='FreyFace' \
 --data_path='./datasets/FreyFace' \
 --batch_size=100 \
@@ -30,4 +24,9 @@ python ./src/AEVB_train.py
 --learning_rate=0.01 \
 --epoch=10000 \
 --output_dir='./output'
+```
+
+## help
+```shell
+python ./src/VAE_train.py -h
 ```
