@@ -32,6 +32,7 @@ python ./src/VAE_train.py -h
 ```
 
 ## citation
+```
 @ARTICLE{2013arXiv1312.6114K,
        author = {{Kingma}, Diederik P and {Welling}, Max},
         title = "{Auto-Encoding Variational Bayes}",
@@ -47,3 +48,4 @@ archivePrefix = {arXiv},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2013arXiv1312.6114K},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+```
